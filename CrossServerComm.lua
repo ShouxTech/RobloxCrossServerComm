@@ -56,7 +56,7 @@ function CrossServerComm.EmitWithReply(event, ...)
 		if os.time() - startTime > REPLY_TIMEOUT then
 			break;
 		end;
-		task.wait(0.5);
+		task.wait(0.2);
 	until res;
 
 	return res;
